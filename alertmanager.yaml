@@ -1,0 +1,12 @@
+groups:
+- name: "HTTPResponses"
+  rules:
+  - alert: HTTPErrorRate
+    expr: rate(http_errors_total{app="myApp"}[15m])
+    for: 10m
+    labels:
+      priority: P3
+      team: vidp
+
+## Labels on this alert look liek:
+# {app="myApp", pod="<podName", namespace="<namespace>", cluster="<cluster>"}
