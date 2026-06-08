@@ -30,7 +30,7 @@ def mysteryFunction(items: list):
 ## Python - Part 3
 # What issue does the following code have:
 
-
+import time
 import myPackage
 
 # The default number of times the function should retry failed events before giving up
