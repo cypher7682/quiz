@@ -18,7 +18,7 @@ while i <= max:
 # What does this function do
 
 
-def mysteryFunction(items):
+def mysteryFunction(items: list):
     counts = {}
     for item in items:
         counts[item] = counts.get(item, 0) + 1
